@@ -10,7 +10,7 @@ body {
 }
 .flex {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 5%;
   display: flex;
   flex-wrap: wrap;
   gap: 2em;
@@ -33,9 +33,40 @@ header h2 {
   font-size: 2em;
   font-weight: 600;
 }
-header i {
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
   margin-right: 5%;
+}
+
+.search-form input {
+  width: 250px;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #fff;
+  transition: .5s;
+}
+
+.search-form input::placeholder {
+  color: #bbb;
+  font-size: 1.1em;
+}
+
+.search-form button {
+  background-color: transparent;
+  border: none;
+  color: #610dff;
   cursor: pointer;
+  transition: .5s;
+}
+
+.search-form button:hover {
+  color: #fff;
 }
 
 /* section = pag-filmes-1 */
@@ -90,4 +121,9 @@ header i {
 
 .fa-star {
     color: #610dff;
+}
+
+.hide {
+  opacity: 0;
+  pointer-events: none;
 }
