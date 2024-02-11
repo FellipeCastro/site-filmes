@@ -1,6 +1,9 @@
 const searchBtn = document.getElementById('search-btn')
 const searchInput = document.getElementById('search-input')
-const cardsContainer = document.getElementById('cards-container')
+const cardsContainer = document.getElementById('cards-conatainer')
+
+const apiKey = '8ed200f50a6942ca5bc8b5cdec27ff22'
+const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
 
 const hanldeSearch = (e) => {
     e.preventDefault()
@@ -12,9 +15,6 @@ searchBtn.addEventListener('click', hanldeSearch)
 
 // API conection
 const getPopularMovies = async () => {
-    const apiKey = '8ed200f50a6942ca5bc8b5cdec27ff22'
-    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}`
-
     try {
         const response = await fetch(apiUrl)
         const data = await response.json()
@@ -26,18 +26,46 @@ const getPopularMovies = async () => {
             console.log(filme.title)
 
             const card = document.createElement('div')
-            card.innerHTML = `
-                <img src="" alt="">
+            card.classList.add('box-filmes')
 
-                <h2>${filme.nome}</h2>
-                <p><i class="fa fa-star" style="font-size:16px"></i> </p>
-                <button>Detalhes</button>
-            `
+            const img = document.createElement('img')
+            img.src = `https://image.tmdb.org/t/p/w500/${filme.poster_path}`
+            img.alt = filme.title
+            
+            const h2 = document.createElement('h2')
+            h2.textContent = filme.title
+            
+            const p = document.createElement('p')
+            const starIcon = document.createElement('i')
+            starIcon.classList.add('fa', 'fa-star')
+            starIcon.style.fontSize = '16px'
+            const rating = document.createTextNode(` ${filme.vote_average.toFixed(1)}`)
+            p.appendChild(starIcon)
+            p.appendChild(rating)
+            
+            const button = document.createElement('button')
+            button.textContent = 'Detalhes'
+            
+            card.appendChild(img)
+            card.appendChild(h2)
+            card.appendChild(p)
+            card.appendChild(button)
+            
+            
+
+            // card.innerHTML = `
+            //     <img src="https://image.tmdb.org/t/p/w500/${filme.poster_path}" alt="${filme.title}">
+            //     <h2>${filme.title}</h2>
+            //     <p><i class="fa fa-star" style="font-size:16px"></i> ${filme.vote_average.toFixed(1)}</p>
+            //     <button>Detalhes</button>
+            // `
+
+            cardsContainer.appendChild(card)
         })
     } catch (error) {
-        console.error('Erro ao buscar filmes populares:', error)
+        console.error('Erro ao buscar filmes: ', error)
     }
-};
+}
 
 // Chamada da função para obter filmes populares
 getPopularMovies()
