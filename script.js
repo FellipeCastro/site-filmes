@@ -20,11 +20,8 @@ const getPopularMovies = async () => {
         const data = await response.json()
 
         const filmes = data.results
-        console.log(filmes)
 
         filmes.map((filme) => {
-            console.log(filme.title)
-
             const card = document.createElement('div')
             card.classList.add('box-filmes')
 
@@ -39,7 +36,7 @@ const getPopularMovies = async () => {
             const starIcon = document.createElement('i')
             starIcon.classList.add('fa', 'fa-star')
             starIcon.style.fontSize = '16px'
-            const rating = document.createTextNode(` ${filme.vote_average.toFixed(1)}`)
+            const rating = document.createTextNode(filme.vote_average.toFixed(1))
             p.appendChild(starIcon)
             p.appendChild(rating)
             
@@ -50,15 +47,6 @@ const getPopularMovies = async () => {
             card.appendChild(h2)
             card.appendChild(p)
             card.appendChild(button)
-            
-            
-
-            // card.innerHTML = `
-            //     <img src="https://image.tmdb.org/t/p/w500/${filme.poster_path}" alt="${filme.title}">
-            //     <h2>${filme.title}</h2>
-            //     <p><i class="fa fa-star" style="font-size:16px"></i> ${filme.vote_average.toFixed(1)}</p>
-            //     <button>Detalhes</button>
-            // `
 
             cardsContainer.appendChild(card)
         })
@@ -67,5 +55,5 @@ const getPopularMovies = async () => {
     }
 }
 
-// Chamada da função para obter filmes populares
+// Chamada da função para obter filmes
 getPopularMovies()

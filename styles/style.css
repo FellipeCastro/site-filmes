@@ -31,7 +31,7 @@ header {
 header h2 {
   margin-left: 5%;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .search-form {
@@ -73,40 +73,45 @@ header h2 {
 
 .titulo-pag-filmes-1 {
   text-align: center;
-  color: #610dff;
+  color: #fff;
   margin: 3% 0;
   font-size: 2em;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .box-filmes {
-  border-radius: 10px;
-  width: 23%;
+  border-radius: 5px;
+  width: 20%;
   background-color: black;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1em;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px #00000080;
 }
 
 .box-filmes img {
-  width: 100%;
-  border-radius: 10px 10px 0 0px;
+  width: calc(100% + 2em);
+  margin: -1em 0 0 -1em;
 }
 .box-filmes h2 {
-  margin-left: 5%;
   font-weight: 600;
 }
 
 .box-filmes p {
-  margin-left: 5%;
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: .3em;
+  margin-top: -.5em;
 }
 .box-filmes button {
-  display: block;
-  margin: 5% auto;
-  width: 90%;
-  height: 40px;
-
+  width: 100%;
+  padding: .5em;
   background-color: #610dff;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
   color: #fff;
   font-size: 1.3em;
