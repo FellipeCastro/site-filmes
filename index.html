@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,12 +20,14 @@
 
     <title>Filmes</title>
 </head>
+
 <body>
     <header>
         <h2>Filmes</h2>
 
         <form method="post" class="search-form">
-            <input type="text" name="search-input" id="search-input" placeholder="Digite o filme aqui" autocomplete="off" class="hide">
+            <input type="text" name="search-input" id="search-input" placeholder="Digite o filme aqui"
+                autocomplete="off" class="hide">
             <button type="submit" id="search-btn">
                 <i class="fa fa-search" style="font-size:28px"></i>
             </button>
@@ -35,11 +38,44 @@
         <h1 class="titulo-pag-filmes-1">Recomendados</h1>
 
         <div class="flex" id="cards-conatainer">
-            
+
         </div><!--Fim flex-->
 
     </section><!--fim pag-filmes-1-->
 
-    <script src="script.js"></script>
+    <div class="modal">
+        <div class="detalhes">
+            <img src="One-Piece-Vol-105.jpg.webp" alt="">
+            <div class="text-container">
+                <div class="title">
+                    <h2>Nome do Filme</h2>
+                    <p class="minutes">90 minutes</p>
+                </div>
+                <p class="star-icon">
+                    <i class="fa fa-star" style="font-size: 16px;"></i> - 9.0
+                </p>
+                <p class="texto">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, error amet maiores, ex rem
+                    architecto deleniti quasi voluptas similique eius magni aperiam neque, minus culpa corporis
+                    assumenda facere porro quis!
+                </p>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, error amet maiores, ex rem
+                    architecto deleniti quasi voluptas similique eius magni aperiam neque, minus culpa corporis
+                    assumenda facere porro quis!
+                </p>
+                </p>
+                <button type="submit" class="play-btn">
+                    <!--ERRO
+                                <i class="bi bi-play-fill" style="font-size: 16px;"></i>
+                        -->
+                    Assistir
+                </button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
 </body>
+
 </html>
