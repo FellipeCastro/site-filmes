@@ -141,28 +141,28 @@ header h2 {
     align-items: center;
     justify-content: center;
     color: #fff;
+    transition: .5s;
 }
 .detalhes{
-  width: 60%;
-  padding: 1em;
+  width: 50%;
+  padding: 2em;
   border-radius: 10px;
   background-color: #222;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   position: relative;
   gap: 2.5em
 }
 .detalhes img{
-  height: 60vh;
+  height: 400px;
 }
 .text-container{
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .title {
   width: 100%;
@@ -170,19 +170,46 @@ header h2 {
   align-items: center;
   justify-content: space-between;
 }
-.title > h2{
+.title  h2{
   font-size: 2em;
-
 }
 .minutes{
-
+  font-style: italic;
 }
 .star-icon{
   width: 100%;
   display: flex;
   justify-content: flex-start;
+  gap: .5em;
+}
+.play-btn, .close-btn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
 }
 
+.play-btn i  {
+  color: #610dff;
+  font-size: 2em;
+}
+
+.play-btn:hover, .close-btn:hover {
+  color: #ffffff99;
+}
+
+.close-btn {
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  font-size: 2em;
+}
 
 .hide {
   opacity: 0;

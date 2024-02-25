@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link BOTSTRAP ICON -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- FIM BOTSTRAP ICON -->
 
     <!--LINK GOOGLE FONTS-->
@@ -20,7 +20,6 @@
 
     <title>Filmes</title>
 </head>
-
 <body>
     <header>
         <h2>Filmes</h2>
@@ -43,8 +42,11 @@
 
     </section><!--fim pag-filmes-1-->
 
-    <div class="modal">
+    <div class="modal hide">
         <div class="detalhes">
+            <button class="close-btn">
+                <i class="bi bi-x"></i>
+            </button>        
             <img src="One-Piece-Vol-105.jpg.webp" alt="">
             <div class="text-container">
                 <div class="title">
@@ -52,30 +54,18 @@
                     <p class="minutes">90 minutes</p>
                 </div>
                 <p class="star-icon">
-                    <i class="fa fa-star" style="font-size: 16px;"></i> - 9.0
+                    <i class="fa fa-star" style="font-size: 16px;"></i> 9.0
                 </p>
                 <p class="texto">
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, error amet maiores, ex rem
-                    architecto deleniti quasi voluptas similique eius magni aperiam neque, minus culpa corporis
-                    assumenda facere porro quis!
-                </p>
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, error amet maiores, ex rem
-                    architecto deleniti quasi voluptas similique eius magni aperiam neque, minus culpa corporis
-                    assumenda facere porro quis!
-                </p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui, officia ad, iure saepe odit quis, eum minus ducimus molestiae repudiandae? Nisi ea dignissimos soluta quae doloribus exercitationem qui enim.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam qui, officia ad, iure saepe odit quis, eum minus ducimus molestiae repudiandae? Nisi ea dignissimos soluta quae doloribus exercitationem qui enim.
                 </p>
                 <button type="submit" class="play-btn">
-                    <!--ERRO
-                                <i class="bi bi-play-fill" style="font-size: 16px;"></i>
-                        -->
-                    Assistir
-                </button>
+                    <i class="bi bi-play-fill"></i> Assistir
+                </button>   
             </div>
         </div>
 
         <script src="script.js"></script>
 </body>
-
 </html>
