@@ -141,6 +141,7 @@ header h2 {
     align-items: center;
     justify-content: center;
     color: #fff;
+    
 }
 .detalhes{
   width: 60%;
@@ -151,7 +152,7 @@ header h2 {
   align-items: center;
   justify-content: start;
   position: relative;
-  gap: 2.5em
+  gap: 2.5em;
 }
 .detalhes img{
   height: 60vh;
