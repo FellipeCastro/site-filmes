@@ -18,12 +18,19 @@ header {
 .hdr {
     
     height: 10vh;
+    width: 100%;
+    background-color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid white;
-}
+    position: fixed;
+    top:0px
+
+    
+
+    }
 .hdr nav a{
     
     text-decoration: underline;
@@ -32,8 +39,11 @@ header {
     margin-right: 80px;
 
 }
+.hdr nav a:hover{
+    color: gray;
+}
 .logoamf{
-display: flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     margin-left: 30px;
@@ -55,11 +65,18 @@ display: flex;
     margin-right: 30px;
 
 }
+.carrinho a:hover{
+    text-decoration: underline;
+    color: gray;
+}
 .imghdr {
     background: black url(img/banner.jpg) center center/cover no-repeat;
     height: 40vh;
     display: flex;
     flex-direction: column;
-    
-
 }
+main {
+    height: 100vh;
+    background-color: gray;
+}
+main .
