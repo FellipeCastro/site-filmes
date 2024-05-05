@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    width: 100%;
+    height: 50vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.hdr {
+    
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+}
+.hdr nav a{
+    
+    text-decoration: underline;
+    color: white;
+    font-size: 1.5em;
+    margin-right: 80px;
+
+}
+.logoamf{
+display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+}
+.logoamf img{
+    width: 70px;
+    height: 70px;
+    margin-right: 50px;
+}
+.carrinho img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.carrinho a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8em;
+    margin-right: 30px;
+
+}
+.imghdr {
+    background: black url(img/banner.jpg) center center/cover no-repeat;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    
+
+}
