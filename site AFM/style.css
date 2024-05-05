@@ -79,4 +79,27 @@ main {
     height: 100vh;
     background-color: gray;
 }
-main .
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40vh;
+    background-color: black;
+    color: white;
+}
+footer .contimg{
+    width: 50%;
+    display: flex;
+    justify-content: ;
+    align-items: center;
+}
+footer .conttxt{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .conttxt div li{
+    display: flex;
+    flex-direction: column;
+}
