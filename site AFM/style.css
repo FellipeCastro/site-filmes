@@ -87,6 +87,7 @@ header {
     font-size: 24px;
 }
 .hdr nav a:hover{
+    text-decoration: underline;
     color: gray;
 }
 
@@ -141,9 +142,9 @@ header {
     text-decoration: none;
     color: white;
     font-size: 24px;
-    
 
 }
+
 .carrinho a:hover{
     text-decoration: underline;
     color: gray;
@@ -185,9 +186,7 @@ header {
 
 .imghdr {
     background: rgb(0, 0, 0) url(img/banner.jpg) center center/cover no-repeat;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+
 }
 
 /* Principal */
@@ -219,4 +218,51 @@ main {
     gap: 15px;
     font-size: 13px;
 }
+.contmain{
 
+}
+.contmain h1{
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+/*Footer*/
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40vh;
+    width: 100%;
+}
+.contfoot{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contimg{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+}
+.conttxt{
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 100%;
+}
+.conttxt div{
+    display: flex;
+    flex-direction: column;
+}
+.conttxt a{
+    text-decoration: none;
+    color: white;
+}
+.conttxt a:hover{
+    text-decoration: underline;
+}
