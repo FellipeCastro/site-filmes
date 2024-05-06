@@ -10,4 +10,22 @@ const fecharCarrinho = () =>{
 
 // API 
 
+let search = 'streetwear'
+const apiUrl = `https://api.mercadolibre.com/sites/MLB/search?q=${search}`
 
+const getItems = async () => {
+    try {
+        const response = await fetch(apiUrl)
+        const data = await response.json()
+
+        const items = data.results
+
+        items.map((item) => {
+            // Criar cards
+        })
+    } catch {
+        console.log('Erro ao conectar API')
+    }
+}
+
+getItems()
