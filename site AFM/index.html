@@ -5,26 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFM store</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://www.flaticon.com/br/icon-font-gratis">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+
     <header>
+       <section class="top-header">
+            <div class="top social">insta</div>
+            <div class="top text-topheader"> FRETE GRÁTIS ACIMA DE R$500,00 REAIS EM COMPRAS!</div>
+            <div class="top none"></div>
+       </section>
+
         <section class="hdr">
             <div class="logoamf">
                 <h1>AMF STORE</h1>
             </div>
             
-            <nav>
-                <a href="#">Store</a>
-                <a href="#">Produtos</a>
-                <a href="#">Contato</a>
-            </nav>
-
-            <div class="carrinho">
-                <img src="img/carrinho.png">
-                <a href="#"></a>
+            <div class="pesquisa">
+            <input type="text" class="input-pesquisa" placeholder="O que você está procurando?">
+            <i class="material-icons">&#xe8b6;</i>
             </div>
+            <div class="carrinho">
+                <div class="img-container" onclick="mostrarCarrinho()"><img src="img/carrinho.png" ></div>
+                <div class="aba-carrinho-aberta">
+                   
+                    <div class="titulo-carrinho"> 
+                        Carrinho de Compras 
+                     <span onclick="fecharCarrinho()"><i class="material-icons" style="font-size: 30px;">&#xe5cd;</i></span>
+                    </div>
+                    <div class="produtos-carrinho"></div>
+                </div>
 
+            </div>
+             <div class="nav-list"> 
+            
+                    <a href="#">Inicio</a>
+                    <a href="#">Nacionais</a>
+                    <a href="#">Importados</a>
+                    <a href="#">Camisas</a>
+                    <a href="#">Calças</a>
+                    <a href="#">Tênis</a>
+
+            </div>
         </section>
+
+     
+
         <section class="imghdr">
             
         </section>
@@ -67,13 +95,17 @@
 
      
     </div>
+
     <main>
-        <section class="">
+        <section class="cat">
 
         </section>
     </main>
+
+    
     <footer>
         
     </footer>
+    
 </body>
 </html>
