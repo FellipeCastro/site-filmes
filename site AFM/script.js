@@ -2,7 +2,11 @@
 const topHeader = document.querySelector('.top-header')
 const header = document.querySelector('.hdr')
 const nav = document.querySelector('.nav-list')
- const abaCar = document.querySelector('.aba-carrinho-aberta')
+const abaCar = document.querySelector('.aba-carrinho-aberta')
+var swiper = ''
+
+
+
 
 const mostrarCarrinho = () =>{
    
@@ -19,12 +23,14 @@ const fecharCarrinho = () =>{
 const activeScroll = () =>{
 
    if( window.scrollY > 100){
-    topHeader.classList.remove('top-header')
+    topHeader.style.transform = 'translateY(-100%)'
     header.classList.remove('hdr')
     header.classList.add('header-scroll')
     nav.style.top = '10vh'
     abaCar.style.top = '0'
+
    }else{
+    topHeader.style.transform = 'translateY(0%)'
     topHeader.classList.add('top-header')
     header.classList.add('hdr')
     nav.style.top = '16vh'
@@ -32,9 +38,8 @@ const activeScroll = () =>{
 
 }
 
+
 window.addEventListener('scroll', activeScroll)
-
-
 
 // API 
 
