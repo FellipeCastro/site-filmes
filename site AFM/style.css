@@ -355,7 +355,8 @@ main {
 }
 .card-produto{
     height: 80%;
-    width: ;
+    width: 90px;
+    background-color: blue;
 }
 
 
