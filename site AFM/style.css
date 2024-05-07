@@ -145,13 +145,13 @@ header {
     width: 32.5%!important; 
     
 }
-.logoamf img{
-
-    width: 70px;
+.logo-header{
     height: 70px;
     margin-left: 30px;
-    margin-right: 20px;   
+    margin-right: 20px; 
+    transition: all 0.8 ease-in-out;  
 }
+
 .logoamf h1{
     margin-left: 30px;
 

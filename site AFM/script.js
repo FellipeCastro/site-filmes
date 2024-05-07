@@ -3,7 +3,7 @@ const topHeader = document.querySelector('.top-header')
 const header = document.querySelector('.hdr')
 const nav = document.querySelector('.nav-list')
 const abaCar = document.querySelector('.aba-carrinho-aberta')
-var swiper = ''
+const logo = document.querySelector('.logo-header')
 
 
 
@@ -28,12 +28,13 @@ const activeScroll = () =>{
     header.classList.add('header-scroll')
     nav.style.top = '10vh'
     abaCar.style.top = '0'
-
+    logo.style.transform = 'scale(0.9)'
    }else{
     topHeader.style.transform = 'translateY(0%)'
     topHeader.classList.add('top-header')
     header.classList.add('hdr')
     nav.style.top = '16vh'
+    logo.style.transform = 'scale(1)'
    }
 
 }
